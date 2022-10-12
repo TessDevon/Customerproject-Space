@@ -12,22 +12,33 @@
 <body>
     
 <header>
-    <img src="x" alt="astronaut">
     <h1>to the moon</h1>
     <div>
-        <span>Read our story</span>
+        <span>Read our story</span>            
         <a href="X">-></a>
     </div>
-    <button id="menu-button">hamburgare</button>
-    <div class="menu">our story</div>
-    <div class="menu">space ventures</div>
-    <div class="menu">about major tom</div>
+    <nav class="menu_nav">
+        <button id="menu-button">
+            <span class="menu1"></span>
+            <span class="menu2"></span>
+            <span class="menu1"></span>
+        </button>
+    </nav>
+    <div class="menu"> 
+        <ul>
+            <li><a href="x">story</a></li>
+            <li><a href="x">space ventures</a></li>
+            <li><a href="x">about major tom</a></li>
+        </ul>    
+    </div>
+        
     <script>
         const menuBtn = document.querySelector('#menu-button');
         menuBtn.addEventListener('click', () => {
-            menuBtn.classList.toggle('menu-open');
+        menuBtn.classList.toggle('menu-open');
         });
     </script>
+
     <!--Titta närmare på vad som menas med scripttaggen.-->
 </header>
 

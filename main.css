@@ -1,0 +1,65 @@
+*{
+  box-sizing: border-box;
+}
+
+header{
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 1500px;
+  background-image: url(../inl-2-kundprojekt-TessDevon/assets/photos/adam-miller-dBaz0xhCkPY-unsplash.jpg);
+  }
+
+  .menu_nav{
+    text-align: right;
+  }
+
+  #menu-button{
+    width: 35px;
+    height: 35px;
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    margin-right: 20px;
+  }
+
+  #menu-button:hover .menu2{
+  left: 0;
+  }
+
+  .menu1{
+    background-color: black;
+    width: 100%;
+    height: 3px;
+    display: block;
+    margin-bottom: 4px;
+    border-radius: 4px;
+  }
+
+  .menu2{
+    background-color: black;
+    width: 100%;
+    height: 3px;
+    display: block;
+    margin-bottom: 4px;
+    border-radius: 4px;
+    left: -5px;
+    position: relative;
+    transition: left 0.5s ease-in-out;
+  }
+
+
+
+
+
+
+
+button + .menu {
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+  }
+  button.menu-open + .menu {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+  }
