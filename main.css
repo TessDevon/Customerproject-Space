@@ -42,11 +42,6 @@ h1{
   margin-top: 10px;
 }
 
-.h1_part{
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
 .header_link{
 text-decoration: none;
 color: black;
@@ -79,8 +74,20 @@ text-decoration-color: black;
   background-color: transparent;
   border: 0;
   cursor: pointer;
+  display: block;
   margin-right: 20px;
-  float: right;
+
+  
+  /*
+  --------------------------Problem när jag ska fixera menyn.-----------------------------------------------------------------
+  --------------------------Linjerna går upp på en rad och när man markerar menyn täcker den bara en smal bit av bilden.--------------
+  --------------------------Behövs det alt en div runt som i sin tur blir den som är flexad? Kollar upp det senare..----------
+  -------------------------- Lades den i div tappar den java...---------------------------
+  display: flex;
+  position: fixed;
+  top: 15px;
+  right: 15px;*/
+  
 }
 
 #menu-button:hover .menu2{
