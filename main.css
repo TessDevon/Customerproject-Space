@@ -47,9 +47,31 @@ h1{
   margin-bottom: 0;
 }
 
-.header_span {
-margin-left: 8px;
-}            
+.header_link{
+text-decoration: none;
+color: black;
+margin-left: 10px;
+}
+  
+.link_text, .link_arrow{
+text-decoration-color: black;
+}
+
+/*
+--------Pilen ska flytta sig till höger.---------------------------------
+--------Undersöker detta när jag gjort min checklist för dagen klar---------------
+
+.header_span_link:hover .header_link{
+  display: flex;
+  justify-content: space-between;
+}
+
+.header_link{
+  left: -5px;
+  position: relative;
+  transition: left 0.5s ease-in-out;
+}
+*/
 
 #menu-button{
   width: 35px;
