@@ -6,7 +6,7 @@
 
 :root{
   --primarycolor:#d200a2;
-  --secondarycolor:	#DCDCDC;
+  --secondarycolor:	#a6a6a6;
 }
 
 span{
@@ -51,6 +51,14 @@ margin-left: 10px;
 text-decoration-color: black;
 }
 
+.link_arrow{
+  position: relative;
+}
+
+.header_link:hover .link_arrow{
+  left: 40px;
+  transition: all 3s ease-in-out;
+}
 
 /*-------------------------Menu------------------*/
 
@@ -84,6 +92,18 @@ input{
   height: 35px;
   opacity: 0;
 }
+
+.menu2{
+  position: relative;
+  left: -5px;
+}
+
+.menu-button:hover .menu2{
+left: 0;
+transition: all 1s ease-in-out;
+}
+
+/*-----hovern fungerar inte på menyn. Krockar någonstans? Går på de andra ställena..*/
 
 input:checked + .menu button span{
   position: absolute;
@@ -135,17 +155,51 @@ input:checked + .menu nav {
   text-transform: uppercase;
   font-size: 3rem;
   font-family: 'Rubik', sans-serif;
-
+}
 
  
 /*----------------------------------------------------------------main css-------------------------------------------------------------------------------------------------------*/
+
+.citat_desk{
+  visibility: hidden;
+}
+
+blockquote{
+  padding: 0;
+  margin: 0;
+  color: white;
+  position: relative;
+  &::before, &::after {
+    content: "";
+    display:block;
+    color: white;
+    position:absolute;
+
+  }
+}
+
+
+/*-------Får inte rätt på citattecknen med denna kod som fanns i filmen?--------*/
+
 
 main{
   background-size: cover; 
   background-position: center;
   height:100vh;
   background-image: url(../inl-2-kundprojekt-TessDevon/assets/photos/raphael-nogueira-svbDI1Pq30s-unsplash.jpg);
+  
 }
+
+/*
+.darkness{
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(13, 13, 13, 0.7);
+  z-index: 1;
+}
+-----------Försök till att mörka ner bakgrunden.
+*/
 
 h2, h3, p{
   color: white;
@@ -158,20 +212,21 @@ h2, h3, p{
 }
 
 .main_1h2{
-  position: relative;
-  top: 0.5%;
-  left: 25%;
   font-size: 4rem;
+  display: block;
+  position: relative;
   z-index: 1;
 /*  text-shadow: 1px black; ----- kolla skuggor----  */
 }
+
 
 .main_2h2{
   color: var(--secondarycolor);
   font-size: 4rem;
   position: relative;
-  top: 4%;
-  left: 10%;
+  top: -40px;
+  left: 120px;
+  font-family: 'Times New Roman', Times, serif;
 }
 /*
 p{
@@ -192,3 +247,26 @@ Exempel på hur man använder var
 .p-gold{
   color:var(--primarycolor)
 }
+
+------------ Till deskviewen sen-------
+*/
+
+@media screen and (min-width:800px){
+
+main{
+  display: flex;
+  .left_part, .right_part{
+    width: 50%;
+    gap: 100px;
+  }
+}
+
+/*-----------------Gap fungerar inte-----------------*/
+
+}
+
+.citat_desk{
+  visibility: hidden;
+}
+
+
