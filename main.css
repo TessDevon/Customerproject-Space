@@ -4,6 +4,12 @@
   box-sizing: border-box;
 }
 
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
 :root{
   --primarycolor:#d200a2;
   --secondarycolor:	#a6a6a6;
@@ -160,26 +166,48 @@ input:checked + .menu nav {
  
 /*----------------------------------------------------------------main css-------------------------------------------------------------------------------------------------------*/
 
-.citat_desk{
-  visibility: hidden;
+.left_part{
+  font-size: 1rem;
 }
 
 blockquote{
-  padding: 0;
-  margin: 0;
+  padding: 20px;
+  margin-top: 10px;
+
   color: white;
   position: relative;
-  &::before, &::after {
-    content: "";
-    display:block;
-    color: white;
-    position:absolute;
-
-  }
+  font-size: 1rem;
+} 
+ 
+blockquote::before{
+  content: open-quote;
+  display: block;
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  color: white;
+  font-size: 2rem;
 }
 
-
-/*-------Får inte rätt på citattecknen med denna kod som fanns i filmen?--------*/
+blockquote::after{
+content: close-quote;
+/*display: block;*/
+position: absolute;
+bottom: -15px;
+color: white;
+font-size: 2rem;
+}
+ 
+.citat_desk{
+  display: none;
+}
+.major_tom{
+  display: none;
+}
+  /*
+  visibility: hidden;
+    -------------------Använde denna lösning tidiare. Ville ha med den dold för att se båda valen som finns.-----
+  */
 
 
 main{
@@ -228,45 +256,45 @@ h2, h3, p{
   left: 120px;
   font-family: 'Times New Roman', Times, serif;
 }
-/*
-p{
-  margin-top: 8rem;
-  margin-bottom: 8rem;
-}
 
-/*
-  h1{
-  font-family: 'Rubik', sans-serif;
-  }
-
-Exempel på hur man använder var
-  .p-dark{
-  color: var(--dark);
-}
-
-.p-gold{
-  color:var(--primarycolor)
-}
-
------------- Till deskviewen sen-------
-*/
 
 @media screen and (min-width:800px){
 
-main{
-  display: flex;
-  .left_part, .right_part{
-    width: 50%;
-    gap: 100px;
+  .citat_desk{
+    display: block;
+    /*visibility: visible;
+    -------------------Använde denna lösning tidiare. Ville ha med den dold för att se båda valen som finns.-----
+    */
+  
   }
+  .citat_desk_text{
+    background: #5C0047;
+    background: linear-gradient(to top, #5C0047 0%, #6E6E6E 50%, #63004D 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 3rem;
+  }
+main{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+  padding: 0 40px; 
+}
+.left_part{
+  grid-column: 1 / span 2;
+}
+.right_part{
+  grid-column: 4 / span 2;
+}
+.major_tom{
+  display: block;
+  width: 100px;
+  height: auto;
+  float: right;
+  transform: rotate(3deg);
+}
 }
 
-/*-----------------Gap fungerar inte-----------------*/
 
-}
-
-.citat_desk{
-  visibility: hidden;
-}
 
 
