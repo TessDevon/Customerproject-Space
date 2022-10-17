@@ -65,6 +65,9 @@ text-decoration-color: black;
   left: 40px;
   transition: all 3s ease-in-out;
 }
+/*------------------------Rörelsen går för fort?--------*/
+
+
 
 /*-------------------------Menu------------------*/
 
@@ -104,12 +107,10 @@ input{
   left: -5px;
 }
 
-.menu-button:hover .menu2{
-left: 0;
-transition: all 1s ease-in-out;
+input:hover + .menu button span:nth-child(2){
+  left: 0;
+  transition: all 1s ease-in-out;
 }
-
-/*-----hovern fungerar inte på menyn. Krockar någonstans? Går på de andra ställena..*/
 
 input:checked + .menu button span{
   position: absolute;
@@ -166,6 +167,11 @@ input:checked + .menu nav {
  
 /*----------------------------------------------------------------main css-------------------------------------------------------------------------------------------------------*/
 
+p{
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+
 .left_part{
   font-size: 1rem;
 }
@@ -177,6 +183,7 @@ blockquote{
   color: white;
   position: relative;
   font-size: 1rem;
+  font-family: 'Rubik', sans-serif;
 } 
  
 blockquote::before{
@@ -218,14 +225,16 @@ main{
   
 }
 
-/*
 .darkness{
   position: fixed;
   width: 100vw;
   height: 100vh;
-  background-color: rgba(13, 13, 13, 0.7);
+  background-color: rgba(0, 0, 0, 0.7) importent;
   z-index: 1;
 }
+/*
+background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../images/raphael-nogueira-svbDI1Pq30s-unsplash.jpg");
+
 -----------Försök till att mörka ner bakgrunden.
 */
 
@@ -233,14 +242,16 @@ h2, h3, p{
   color: white;
 }
 
-
+h3{
+  font-size: 2.5vw;
+}
 
 .div_h2{
   display: flex;
 }
 
 .main_1h2{
-  font-size: 4rem;
+  font-size: 8vw;
   display: block;
   position: relative;
   z-index: 1;
@@ -250,10 +261,10 @@ h2, h3, p{
 
 .main_2h2{
   color: var(--secondarycolor);
-  font-size: 4rem;
+  font-size: 8vw;
   position: relative;
-  top: -40px;
-  left: 120px;
+  top: -8vh;
+  left: 0.5vw;
   font-family: 'Times New Roman', Times, serif;
 }
 
@@ -272,7 +283,9 @@ h2, h3, p{
     background: linear-gradient(to top, #5C0047 0%, #6E6E6E 50%, #63004D 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-size: 3rem;
+    font-size: 3vw;
+    margin-left: 0;
+    padding-left: 0;
   }
 main{
   display: grid;
@@ -286,6 +299,9 @@ main{
 .right_part{
   grid-column: 4 / span 2;
 }
+
+
+
 .major_tom{
   display: block;
   width: 100px;
