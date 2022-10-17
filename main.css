@@ -72,8 +72,8 @@ text-decoration-color: black;
 /*-------------------------Menu------------------*/
 
 button{
-  width: 35px;
-  height: 35px;
+  width: 65px;
+  height: 65px;
   background-color: transparent;
   border: 0;
   position: fixed;
@@ -85,11 +85,11 @@ button{
 
 button span {
   display: block;
-  width: 25px;
-  height: 3px;
+  width: 45px;
+  height: 5px;
   background-color: black;
   border-radius: 4px;
-  margin-bottom: 4px;
+  margin-bottom: 7px;
 }
 
 input{
@@ -97,14 +97,14 @@ input{
   top: 20px;
   right: 20px;
   z-index: 1;
-  width: 35px;
-  height: 35px;
+  width: 65px;
+  height: 65px;
   opacity: 0;
 }
 
 .menu2{
   position: relative;
-  left: -5px;
+  left: -10px;
 }
 
 input:hover + .menu button span:nth-child(2){
