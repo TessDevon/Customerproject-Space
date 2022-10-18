@@ -1,4 +1,6 @@
-/*---------------------------------------------------------------------MAIN CSS---------------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------
+---------------------------------------------MAIN CSS----------------------------
+---------------------------------------------------------------------------------*/
 
 *{
   box-sizing: border-box;
@@ -19,13 +21,15 @@ span{
   font-family: 'Rubik', sans-serif;
 }
 
-/*--------------------------------------------------------------------HEADER CSS--------------------------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------
+--------------------------------------------HEADER CSS--------------------------
+--------------------------------------------------------------------------------*/
 
 header{
   background-size: cover; 
   background-position: center;
   height:100vh;
-  background-image: url(../inl-2-kundprojekt-TessDevon/assets/photos/adam-miller-dBaz0xhCkPY-unsplash.jpg);
+  background-image: url("../inl-2-kundprojekt-TessDevon/assets/photos/adam-miller-dBaz0xhCkPY-unsplash.jpg");
   display: flex;
 }
 
@@ -76,7 +80,9 @@ text-decoration-color: black;
 
 
 
-/*-------------------------Menu------------------*/
+/*--------------------------------------------------------------------------------
+-----------------------------------------Menu-------------------------------------
+----------------------------------------------------------------------------------*/
 
 button{
   width: 65px;
@@ -109,7 +115,7 @@ input{
   opacity: 0;
 }
 
-.menu2{
+.menu_line2{
   position: relative;
   left: -10px;
 }
@@ -175,7 +181,9 @@ input:checked + .menu nav {
 }
 
  
-/*----------------------------------------------------------------main css-------------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------
+------------------------------------- section css------------------------------------------
+------------------------------------------------------------------------------------------*/
 
 p{
   font-family: 'Rubik', sans-serif;
@@ -233,7 +241,7 @@ main{
   background-size: cover; 
   background-position: center;
   height:100vh;
-  background-image: url(../inl-2-kundprojekt-TessDevon/assets/photos/raphael-nogueira-svbDI1Pq30s-unsplash.jpg);
+  background-image: url(../inl-2-kundprojekt-TessDevon/assets/photos/raphael-nogueira-svbDI1Pq30s-unsplash2.jpg);
   
 }
 
@@ -247,7 +255,7 @@ main{
 /*
 background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../images/raphael-nogueira-svbDI1Pq30s-unsplash.jpg");
 
------------Försök till att mörka ner bakgrunden.
+-----------Försök till att mörka ner bakgrunden.-------------------
 */
 
 h2, h3, p{
@@ -285,8 +293,10 @@ h3{
 }
 
 
+/*------------------------------delen ska vara längst ner-------------------------------------
+  --------------------------------knappen syns inte--------------------------------------*/
 
-
+/*
 
 .cookiepart{
   display: flex;
@@ -313,7 +323,6 @@ h3{
 
 
 
-
 @-webkit-keyframes glow {
   from {
     text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
@@ -330,10 +339,26 @@ h3{
 }
 
 .tom_arrow{
-  visibility: hidden;
+  visibility: visible;
 }
 
+*/
+
+/*---------------------------------------------------------------------------------------------
+------------------------------------------breda skärmar----------------------------------------
+-----------------------------------------------------------------------------------------------*/
+
+
+
 @media screen and (min-width:800px){
+
+  .menu_li:hover .a_menu{
+    text-decoration: underline;
+    text-decoration-color: var(--primarycolor);
+    
+  }
+
+
 
   .header_span_link{
     display: flex;
@@ -347,9 +372,10 @@ h3{
     /*visibility: visible;
     -------------------Använde denna lösning tidiare. Ville ha med den dold för att se båda valen som finns.-----
     */
-  
+
   }
 
+  
   .citat_desk_text{
     background: #5C0047;
     background: linear-gradient(to top, #5C0047 0%, #6E6E6E 50%, #63004D 100%);
@@ -383,12 +409,11 @@ h3{
   float: right;
   transform: rotate(3deg);
 }
-}
-
-/*-----------------------------------lower main-----------------*/
-/*--------------buttun synas och flytta button till höger---------------------*/
-
 
 .tom_arrow{
-  visibility: visible;
+  visibility: hidden;
 }
+
+}
+
+
