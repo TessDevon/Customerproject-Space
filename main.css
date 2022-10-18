@@ -33,18 +33,25 @@ header{
   border: 5px solid black;
   position: absolute;
   top: 10vh;
-  left: 10vw;
-  width: 200px;
-  height: 225px;
+  left: 5vw;
+  width: 30vw;
+  min-width: 300px;
+  min-height: 300px;
+  height: 28vw;
 }
 
 h1{
   font-family: 'Rubik', sans-serif;
   text-transform: uppercase;
-  font-size: 2.5rem;
-  font-weight: 900;
+  font-size: 7vw;
+  font-weight: 600;
   text-align: center;
-  margin-top: 10px;
+  margin-top: 10%;
+}
+
+.header_span_link{
+  position: relative;
+  left: 5vw;
 }
 
 .header_link{
@@ -79,7 +86,7 @@ button{
   position: fixed;
   right: 20px;
   top: 20px;
-  z-index: 2;
+  z-index: 7;
   pointer-events: none;
 }
 
@@ -96,7 +103,7 @@ input{
   position: fixed;
   top: 20px;
   right: 20px;
-  z-index: 1;
+  z-index: 6;
   width: 65px;
   height: 65px;
   opacity: 0;
@@ -129,6 +136,7 @@ input:checked + .menu button span:nth-child(3){
 
 .nav_menu{
   position: fixed;
+  z-index: 5;
   top: 0;
   left: 0;
   background-color: rgba(255, 255, 255, 0.9);
@@ -168,9 +176,11 @@ input:checked + .menu nav {
 /*----------------------------------------------------------------main css-------------------------------------------------------------------------------------------------------*/
 
 p{
+  font-family: 'Rubik', sans-serif;
   padding-top: 3px;
   padding-bottom: 3px;
 }
+
 
 .left_part{
   font-size: 1rem;
@@ -244,6 +254,9 @@ h2, h3, p{
 
 h3{
   font-size: 2.5vw;
+  font-weight: 600;
+  font-family: 'Rubik', sans-serif;
+
 }
 
 .div_h2{
@@ -252,6 +265,7 @@ h3{
 
 .main_1h2{
   font-size: 8vw;
+  font-weight: 600;
   display: block;
   position: relative;
   z-index: 1;
@@ -271,6 +285,13 @@ h3{
 
 @media screen and (min-width:800px){
 
+  .header_span_link{
+    display: flex;
+    position: relative;
+    right: -60%;
+  }
+  
+
   .citat_desk{
     display: block;
     /*visibility: visible;
@@ -278,6 +299,7 @@ h3{
     */
   
   }
+
   .citat_desk_text{
     background: #5C0047;
     background: linear-gradient(to top, #5C0047 0%, #6E6E6E 50%, #63004D 100%);
@@ -287,19 +309,21 @@ h3{
     margin-left: 0;
     padding-left: 0;
   }
-main{
+
+  main{
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   gap: 20px;
   padding: 0 40px; 
 }
+
 .left_part{
   grid-column: 1 / span 2;
 }
+
 .right_part{
   grid-column: 4 / span 2;
 }
-
 
 
 .major_tom{
@@ -311,6 +335,42 @@ main{
 }
 }
 
+/*-----------------------------------lower main-----------------*/
+/*--------------buttun synas och flytta button till höger---------------------*/
+.cookiepart{
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  background-color: rgba(56, 15, 66, 0.7);
+  
+}
 
+.glow {
+  font-size: 15px;
+  font-family: font-family: 'Rubik', sans-serif;
+  text-align: left;
+  animation: glow 1s ease-in-out infinite alternate;
+}
 
+.a_glow{
+ text-decoration: none; 
+ color: var(--primarycolor);
+ padding: 20px;
+}
 
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
+
+.cookie{
+  position: static;
+  color: white;
+}
