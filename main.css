@@ -36,11 +36,9 @@ span{
 }
 
 
-
 /*------------------------------------------------------------------------------
 --------------------------------------------HEADER CSS--------------------------
 --------------------------------------------------------------------------------*/
-
 
 header{
   background-size: cover; 
@@ -56,8 +54,8 @@ header{
   top: 10vh;
   left: 5vw;
   width: 30vw;
-  min-width: 300px;
-  min-height: 300px;
+  min-width: 250px;
+  min-height: 250px;
   height: 28vw;
 }
 
@@ -92,31 +90,9 @@ margin-left: 10px;
 }
 
 
-/*
-.link_text, .link_arrow{
-text-decoration-color: black;
-}
-
-.link_arrow{
-  position: relative;
-
-  
-}
-
-.header_link:hover .link_arrow{
-  transition: all 1s ease-in-out;
-  left: 40px;
-}*/
-
-
-/*------------------------Rörelsen går för fort?--------*/
-
-
-
 /*--------------------------------------------------------------------------------
 -----------------------------------------MENU------------------------------------
 ----------------------------------------------------------------------------------*/
-
 
 .menu-button{
   width: 65px;
@@ -233,7 +209,6 @@ input:checked + .menu nav {
 ------------------------------------- SECTIONS CSS ------------------------------------------
 ------------------------------------------------------------------------------------------*/
 
-
 p{
   font-family: 'Rubik', sans-serif;
   padding-top: 3px;
@@ -245,6 +220,10 @@ p{
 
 h3, .left_part p{
  margin-left: 20px;
+}
+
+h3{
+  margin-top: 0;
 }
 
 .right_part p{
@@ -315,22 +294,22 @@ h3{
 }
 
 .main_1h2{
-  font-size: 8vw;
+  font-size: 9vw;
   font-weight: 600;
   text-shadow: 1px 2px 3px rgb(51, 51, 51);
   display: block;
   position: relative;
   top: 15px;
-  left: 15px;
+  left: 260px;
   z-index: 1;
 }
 
 .main_2h2{
   color: var(--secondarycolor);
-  font-size: 8vw;
+  font-size: 9vw;
   position: relative;
-  top: -60px;
-  left: 27px;
+  top: -20px;
+  left: 268px;
   font-family: 'Times New Roman', Times, serif;
 }
 
@@ -398,16 +377,31 @@ main{
 }
 
 
-
 /*--------------------------------------------------------------------------------------------
 -------------------------------------MOBILE---------------------------------------------------
 ----------------------------------------------------------------------------------------------*/
-
 
 @media screen and (max-width:800px){
   .on_click:checked ~ header_cube {
 	display: none;
   }
+
+  .left_part p{
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 1.8vw;
+  }
+  
+  .right_part p{
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 1.8vw;
+  }
+
+  .a_glow{
+    font-size: 1.5vw;
+  }
+
 }
 
 
@@ -453,6 +447,26 @@ main{
     grid-template-columns: repeat(5, 1fr);
     gap: 20px;
     padding: 0 40px; 
+  }
+
+  .main_1h2{
+    font-size: 8vw;
+    font-weight: 600;
+    text-shadow: 1px 2px 3px rgb(51, 51, 51);
+    display: block;
+    position: relative;
+    top: 15px;
+    left: 15px;
+    z-index: 1;
+  }
+  
+  .main_2h2{
+    color: var(--secondarycolor);
+    font-size: 8vw;
+    position: relative;
+    top: -60px;
+    left: 27px;
+    font-family: 'Times New Roman', Times, serif;
   }
 
   .left_part{
