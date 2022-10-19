@@ -88,7 +88,8 @@ text-decoration-color: black;
 
 .header_link:hover .link_arrow{
   left: 40px;
-  transition: all 3s ease-in-out;
+  background-color: #5C0047;
+  transition: all 1s ease-in-out;
 }
 /*------------------------Rörelsen går för fort?--------*/
 
