@@ -310,6 +310,11 @@ h3{
   font-family: 'Times New Roman', Times, serif;
 }
 
+.link_tom{
+  color: var(--primarycolor);
+  text-decoration-color: var(--primarycolor);
+}
+
 .cookiepart{
 width: 100vw;
 display: flex;
@@ -354,17 +359,11 @@ margin-right: 20px;
 font-family: 'Rubik', sans-serif;
 }
 
-
-
-/*-------------------------------------------------------------------------------------------
----------------------------------------MOBILE-----------------------------------------------
---------------------------------------------------------------------------------------------*/
-
-@media screen and (max-width:800px){
-  menu{
-    flex-direction: column;
-  }
+main{
+  display: flex;
+  flex-direction: column;
 }
+
 
 
 
