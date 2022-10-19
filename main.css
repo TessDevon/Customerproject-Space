@@ -28,7 +28,12 @@ span{
 .tom_arrow{
   visibility: visible;
 }
-
+.citat_desk{
+  display: none;
+}
+.major_tom{
+  display: none;
+}
 
 /*------------------------------------------------------------------------------
 --------------------------------------------HEADER CSS--------------------------
@@ -112,6 +117,7 @@ text-decoration-color: black;
   background-color: black;
   border-radius: 4px;
   margin-bottom: 7px;
+  border: 1px ridge rgb(255, 255, 255);
 }
 
 input{
@@ -248,12 +254,7 @@ color: white;
 font-size: 2rem;
 }
  
-.citat_desk{
-  display: none;
-}
-.major_tom{
-  display: none;
-}
+
   /*
   visibility: hidden;
     -------------------Använde denna lösning tidiare. Ville ha med den dold för att se båda valen som finns.-----
@@ -261,6 +262,8 @@ font-size: 2rem;
 
 
 main{
+  display: flex;
+  position: relative;
   background-size: cover; 
   background-position: center;
   height:100vh;
@@ -298,7 +301,6 @@ h3{
   z-index: 1;
 }
 
-
 .main_2h2{
   color: var(--secondarycolor);
   font-size: 8vw;
@@ -306,11 +308,6 @@ h3{
   top: -8vh;
   left: 0.5vw;
   font-family: 'Times New Roman', Times, serif;
-}
-
-#andra_halvan{
-  display: flex;
-  position: relative;
 }
 
 .cookiepart{
@@ -322,7 +319,6 @@ left: 0;
 background-color: rgba(56, 15, 66, 0.7);
 justify-content: space-between;
 }
-
 
 .glow{
 padding: 20px;
@@ -359,12 +355,26 @@ font-family: 'Rubik', sans-serif;
 }
 
 
+
+/*-------------------------------------------------------------------------------------------
+---------------------------------------mobile-----------------------------------------------
+--------------------------------------------------------------------------------------------*/
+
+@media screen and (max-width:800px){
+  menu{
+    flex-direction: column;
+  }
+}
+
+
+
+
 /*---------------------------------------------------------------------------------------------
 ------------------------------------------desktop----------------------------------------
 -----------------------------------------------------------------------------------------------*/
 
-@media screen and (min-width:800px){
 
+@media screen and (min-width:800px){
   .menu_li:hover .a_menu{
     text-decoration: underline;
     text-decoration-color: var(--primarycolor);
