@@ -35,9 +35,12 @@ span{
   display: none;
 }
 
+
+
 /*------------------------------------------------------------------------------
 --------------------------------------------HEADER CSS--------------------------
 --------------------------------------------------------------------------------*/
+
 
 header{
   background-size: cover; 
@@ -78,19 +81,34 @@ color: black;
 margin-left: 10px;
 }
   
+.link_arrow{
+  position: relative;
+  transition: all 1s ease-in-out;
+  left: 0;
+}
+
+.header_link:hover .link_arrow{
+  left: 40px;
+}
+
+
+/*
 .link_text, .link_arrow{
 text-decoration-color: black;
 }
 
 .link_arrow{
   position: relative;
+
+  
 }
 
 .header_link:hover .link_arrow{
-  left: 40px;
-  background-color: #5C0047;
   transition: all 1s ease-in-out;
-}
+  left: 40px;
+}*/
+
+
 /*------------------------Rörelsen går för fort?--------*/
 
 
@@ -98,6 +116,7 @@ text-decoration-color: black;
 /*--------------------------------------------------------------------------------
 -----------------------------------------MENU------------------------------------
 ----------------------------------------------------------------------------------*/
+
 
 .menu-button{
   width: 65px;
@@ -138,12 +157,12 @@ input{
 
 input:hover + .menu button span:nth-child(2){
   left: 0;
-  transition: all 1s ease-in-out;
+  transition: all 0.6s ease-in-out;
 }
 
 input:checked + .menu button span{
   position: absolute;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.6s ease-in-out;
 }
 
 input:checked + .menu button span:nth-child(2){
@@ -161,7 +180,7 @@ input:checked + .menu button span:nth-child(3){
   z-index: 5;
   top: 0;
   left: 0;
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(255, 255, 255, 0.8);
   width: 100vw;
   height: 100vh;
   opacity: 0;
@@ -209,9 +228,11 @@ input:checked + .menu nav {
 }
  
 
+
 /*-----------------------------------------------------------------------------------------
 ------------------------------------- SECTIONS CSS ------------------------------------------
 ------------------------------------------------------------------------------------------*/
+
 
 p{
   font-family: 'Rubik', sans-serif;
@@ -219,8 +240,16 @@ p{
   padding-bottom: 3px;
   font: 5rem;
   color: white;
+  line-height: 150%;
 }
 
+h3, .left_part p{
+ margin-left: 20px;
+}
+
+.right_part p{
+  margin-right: 30px;
+}
 
 .left_part{
   font-size: 1rem;
@@ -229,10 +258,9 @@ p{
 blockquote{
   padding: 20px;
   margin-top: 10px;
-
   color: white;
   position: relative;
-  font-size: 1rem;
+  font-size: 2rem;
   font-family: 'Rubik', sans-serif;
 } 
  
@@ -248,7 +276,6 @@ blockquote::before{
 
 blockquote::after{
 content: close-quote;
-/*display: block;*/
 position: absolute;
 bottom: -15px;
 color: white;
@@ -271,13 +298,6 @@ main{
   background-image: url(../inl-2-kundprojekt-TessDevon/assets/photos/raphael-nogueira-svbDI1Pq30s-unsplash2.jpg);
 }
 
-.darkness{
-  position: fixed;
-  width: 100vw;
-  height: 100vh;
-  background-color: rgba(0, 0, 0, 0.7) importent;
-  z-index: 1;
-}
 
 h2, h3, p{
   color: white;
@@ -291,6 +311,7 @@ h3{
 
 .div_h2{
   display: flex;
+
 }
 
 .main_1h2{
@@ -299,6 +320,8 @@ h3{
   text-shadow: 1px 2px 3px rgb(51, 51, 51);
   display: block;
   position: relative;
+  top: 15px;
+  left: 15px;
   z-index: 1;
 }
 
@@ -306,10 +329,12 @@ h3{
   color: var(--secondarycolor);
   font-size: 8vw;
   position: relative;
-  top: -8vh;
-  left: 0.5vw;
+  top: -60px;
+  left: 27px;
   font-family: 'Times New Roman', Times, serif;
 }
+
+
 
 .link_tom{
   color: var(--primarycolor);
@@ -317,7 +342,7 @@ h3{
 }
 
 .cookiepart{
-width: 100vw;
+width: 99vw;
 display: flex;
 position: absolute;
 bottom: 0;
@@ -327,10 +352,17 @@ justify-content: space-between;
 }
 
 .glow{
-padding: 20px;
+padding: 10px;
 font-size: 15px;
 font-family: 'Rubik', sans-serif;
-animation: glow 1s ease-in-out infinite alternate;
+width: 90vw;
+
+}
+.cookiebutton{
+  display: flex;
+  position: relative;
+  top: 5px;
+
 }
 
 .a_glow{
@@ -339,15 +371,15 @@ animation: glow 1s ease-in-out infinite alternate;
   padding: 20px;
   padding-bottom: 0;
   margin-bottom: 0;
-}
- 
-@-webkit-keyframes glow {
-  from {
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
-  }
-  to {
-    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
-  }
+  text-shadow:
+    0 0 7px #d200a2,
+    0 0 10px #d200a2,
+    0 0 21px #d200a2,
+    0 0 42px #d200a2,
+    0 0 82px #d200a2,
+    0 0 92px #d200a2,
+    0 0 102px #d200a2,
+    0 0 151px #d200a2;
 }
 
 .cookiebutton{
@@ -367,6 +399,17 @@ main{
 
 
 
+/*--------------------------------------------------------------------------------------------
+-------------------------------------MOBILE---------------------------------------------------
+----------------------------------------------------------------------------------------------*/
+
+
+@media screen and (max-width:800px){
+  .on_click:checked ~ header_cube {
+	display: none;
+  }
+}
+
 
 
 /*---------------------------------------------------------------------------------------------
@@ -378,6 +421,7 @@ main{
   .menu_li:hover .a_menu{
     text-decoration: underline;
     text-decoration-color: var(--primarycolor);
+    /*border-radius: 20px;                          Får inte rundade kanter på den rosa linjen*/
   }
 
   .header_span_link{
@@ -400,6 +444,7 @@ main{
     -webkit-text-fill-color: transparent;
     font-size: 3vw;
     margin-left: 0;
+    margin-top: 100px;
     padding-left: 0;
   }
 
@@ -420,10 +465,11 @@ main{
 
   .major_tom{
     display: block;
-    width: 100px;
+    width: 90px;
     height: auto;
     float: right;
-    transform: rotate(3deg);
+    transform: rotate(2deg);
+    margin: 15px;
   }
 
   .tom_arrow{
