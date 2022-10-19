@@ -10,7 +10,6 @@ html {
   scroll-behavior: smooth;
 }
 
-
 .clearfix::after {
   content: "";
   clear: both;
@@ -26,10 +25,10 @@ span{
   font-family: 'Rubik', sans-serif;
 }
 
-
 .tom_arrow{
   visibility: visible;
 }
+
 
 /*------------------------------------------------------------------------------
 --------------------------------------------HEADER CSS--------------------------
@@ -200,10 +199,9 @@ input:checked + .menu nav {
   left:50vw;
   font-size: 100px;
   color: white;
-
-
 }
  
+
 /*-----------------------------------------------------------------------------------------
 ------------------------------------- section css------------------------------------------
 ------------------------------------------------------------------------------------------*/
@@ -267,7 +265,6 @@ main{
   background-position: center;
   height:100vh;
   background-image: url(../inl-2-kundprojekt-TessDevon/assets/photos/raphael-nogueira-svbDI1Pq30s-unsplash2.jpg);
-  
 }
 
 .darkness{
@@ -277,11 +274,6 @@ main{
   background-color: rgba(0, 0, 0, 0.7) importent;
   z-index: 1;
 }
-/*
-background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../images/raphael-nogueira-svbDI1Pq30s-unsplash.jpg");
-
------------Försök till att mörka ner bakgrunden.-------------------
-*/
 
 h2, h3, p{
   color: white;
@@ -291,7 +283,6 @@ h3{
   font-size: 2.5vw;
   font-weight: 600;
   font-family: 'Rubik', sans-serif;
-
 }
 
 .div_h2{
@@ -346,19 +337,16 @@ animation: glow 1s ease-in-out infinite alternate;
   padding: 20px;
   padding-bottom: 0;
   margin-bottom: 0;
- }
+}
  
- @-webkit-keyframes glow {
-   from {
-     text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
-   }
-   
-   to {
-     text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
-   }
- }
-
-
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
 
 .cookiebutton{
 text-decoration: none;
@@ -371,14 +359,6 @@ font-family: 'Rubik', sans-serif;
 }
 
 
-
-
-
-
-
-
-
-
 /*---------------------------------------------------------------------------------------------
 ------------------------------------------desktop----------------------------------------
 -----------------------------------------------------------------------------------------------*/
@@ -388,10 +368,7 @@ font-family: 'Rubik', sans-serif;
   .menu_li:hover .a_menu{
     text-decoration: underline;
     text-decoration-color: var(--primarycolor);
-    
   }
-
-
 
   .header_span_link{
     display: flex;
@@ -399,16 +376,13 @@ font-family: 'Rubik', sans-serif;
     right: -60%;
   }
   
-
   .citat_desk{
     display: block;
     /*visibility: visible;
     -------------------Använde denna lösning tidiare. Ville ha med den dold för att se båda valen som finns.-----
     */
-
   }
 
-  
   .citat_desk_text{
     background: #5C0047;
     background: linear-gradient(to top, #5C0047 0%, #6E6E6E 50%, #63004D 100%);
@@ -420,33 +394,31 @@ font-family: 'Rubik', sans-serif;
   }
 
   main{
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 20px;
-  padding: 0 40px; 
-}
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    padding: 0 40px; 
+  }
 
-.left_part{
-  grid-column: 1 / span 2;
-}
+  .left_part{
+    grid-column: 1 / span 2;
+  }
 
-.right_part{
-  grid-column: 4 / span 2;
-}
+  .right_part{
+    grid-column: 4 / span 2;
+  }
 
+  .major_tom{
+    display: block;
+    width: 100px;
+    height: auto;
+    float: right;
+    transform: rotate(3deg);
+  }
 
-.major_tom{
-  display: block;
-  width: 100px;
-  height: auto;
-  float: right;
-  transform: rotate(3deg);
-}
-
-.tom_arrow{
-  visibility: hidden;
-}
-
+  .tom_arrow{
+    visibility: hidden;
+  }
 }
 
 
