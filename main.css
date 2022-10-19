@@ -6,6 +6,11 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+
 .clearfix::after {
   content: "";
   clear: both;
@@ -19,6 +24,11 @@
 
 span{
   font-family: 'Rubik', sans-serif;
+}
+
+
+.tom_arrow{
+  visibility: visible;
 }
 
 /*------------------------------------------------------------------------------
@@ -84,7 +94,7 @@ text-decoration-color: black;
 -----------------------------------------Menu-------------------------------------
 ----------------------------------------------------------------------------------*/
 
-button{
+.menu-button{
   width: 65px;
   height: 65px;
   background-color: transparent;
@@ -96,7 +106,7 @@ button{
   pointer-events: none;
 }
 
-button span {
+.menu-button span {
   display: block;
   width: 45px;
   height: 5px;
@@ -177,9 +187,22 @@ input:checked + .menu nav {
   font-size: 3rem;
   font-family: 'Rubik', sans-serif;
   text-shadow: 0px 3px rgb(148, 148, 148);
-
 }
 
+.site_arrow_div{
+  display: flex;
+  position: relative;
+}
+
+.site_arrow{
+  position: absolute;
+  bottom: 15px;
+  left:50vw;
+  font-size: 100px;
+  color: white;
+
+
+}
  
 /*-----------------------------------------------------------------------------------------
 ------------------------------------- section css------------------------------------------
@@ -189,6 +212,8 @@ p{
   font-family: 'Rubik', sans-serif;
   padding-top: 3px;
   padding-bottom: 3px;
+  font: 5rem;
+  color: white;
 }
 
 
@@ -292,63 +317,71 @@ h3{
   font-family: 'Times New Roman', Times, serif;
 }
 
-
-/*------------------------------delen ska vara längst ner-------------------------------------
-  --------------------------------knappen syns inte--------------------------------------*/
-
-/*
-
-.cookiepart{
+#andra_halvan{
   display: flex;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100vw;
-  background-color: rgba(56, 15, 66, 0.7);
-  
+  position: relative;
 }
 
-.glow {
-  font-size: 15px;
-  font-family: font-family: 'Rubik', sans-serif;
-  text-align: left;
-  animation: glow 1s ease-in-out infinite alternate;
+.cookiepart{
+width: 100vw;
+display: flex;
+position: absolute;
+bottom: 0;
+left: 0;
+background-color: rgba(56, 15, 66, 0.7);
+justify-content: space-between;
+}
+
+
+.glow{
+padding: 20px;
+font-size: 15px;
+font-family: 'Rubik', sans-serif;
+animation: glow 1s ease-in-out infinite alternate;
 }
 
 .a_glow{
- text-decoration: none; 
- color: var(--primarycolor);
- padding: 20px;
+  text-decoration: none; 
+  color: var(--primarycolor);
+  padding: 20px;
+  padding-bottom: 0;
+  margin-bottom: 0;
+ }
+ 
+ @-webkit-keyframes glow {
+   from {
+     text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+   }
+   
+   to {
+     text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+   }
+ }
+
+
+
+.cookiebutton{
+text-decoration: none;
+background-color: blue;
+color: white;
+text-transform: uppercase;
+border: blue;
+margin-right: 20px;
+font-family: 'Rubik', sans-serif;
 }
 
 
 
-@-webkit-keyframes glow {
-  from {
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
-  }
-  
-  to {
-    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
-  }
-}
 
-.cookie{
-  position: static;
-  color: white;
-}
 
-.tom_arrow{
-  visibility: visible;
-}
 
-*/
+
+
+
 
 /*---------------------------------------------------------------------------------------------
-------------------------------------------breda skärmar----------------------------------------
+------------------------------------------desktop----------------------------------------
 -----------------------------------------------------------------------------------------------*/
-
-
 
 @media screen and (min-width:800px){
 
