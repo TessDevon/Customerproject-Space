@@ -379,19 +379,14 @@ margin-top: 15px;
  @media screen and (min-width:800px){
 
   h1{
-    font-family: 'Rubik', sans-serif;
-    text-transform: uppercase;
     font-size: 7vw;
-    font-weight: 600;
-    text-align: center;
-    margin-top: 10%;
   }
 
   .header_span_link{
     display: flex;
-    position: relative;
     right: -60%;
     left: 16vw;
+    top: 60px;
   }
 
   .h1_br{
@@ -408,6 +403,13 @@ margin-top: 15px;
   height: 300px;
   }
 
+  main{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    padding: 0 40px; 
+  }
+
   .main_1h2{
     font-size: 7vw;
     top: 20px;
@@ -422,9 +424,6 @@ margin-top: 15px;
 
   h3{
     font-size: 2vw;
-    font-weight: 600;
-    font-family: 'Rubik', sans-serif;
-    margin-top: 0;
     margin-bottom: 25px;
     margin-left: 30px;
   }
@@ -443,6 +442,13 @@ margin-top: 15px;
     margin-right: 30px;
   }
 
+
+  .qoute{
+    font-size: 2rem;
+    margin-right: 0;
+    margin-left: 60px;
+  }
+
   .citat_desk{
     display: block;
   }
@@ -458,12 +464,7 @@ margin-top: 15px;
     padding-left: 0;
   }
 
-  main{
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 20px;
-    padding: 0 40px; 
-  }
+
 
   .left_part{
     grid-column: 1 / span 2;
@@ -483,11 +484,6 @@ margin-top: 15px;
   font-size: 2rem;
   }
 
-  .qoute{
-    font-size: 2rem;
-    margin-right: 0;
-    margin-left: 60px;
-  }
 
   .major_tom{
     display: block;
