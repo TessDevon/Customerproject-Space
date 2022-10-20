@@ -376,13 +376,7 @@ margin-top: 15px;
 /*---------------------------------------------------------------------------------------------
 -----------------------------------------DESKTOP----------------------------------------
 -----------------------------------------------------------------------------------------------*/
-
-@media screen and (min-width:800px){
-  .menu_li:hover .a_menu{
-    text-decoration: underline;
-    text-decoration-color: var(--primarycolor);
-    /*border-radius: 20px;                          Får inte rundade kanter på den rosa linjen*/
-  }
+ @media screen and (min-width:800px){
 
   h1{
     font-family: 'Rubik', sans-serif;
@@ -397,15 +391,33 @@ margin-top: 15px;
     display: flex;
     position: relative;
     right: -60%;
+    left: 16vw;
   }
 
   .h1_br{
     display: none;
   }
 
+  .menu_li:hover .a_menu{
+    text-decoration: underline;
+    text-decoration-color: var(--primarycolor);
+    /*border-radius: 20px;                          Får inte rundade kanter på den rosa linjen*/
+  }
+
   h2{
   height: 300px;
+  }
 
+  .main_1h2{
+    font-size: 7vw;
+    top: 20px;
+    left: 20px;
+  }
+  
+  .main_2h2{
+    font-size: 9vw;
+    top: -60px;
+    left: 40px;
   }
 
   h3{
@@ -431,11 +443,6 @@ margin-top: 15px;
     margin-right: 30px;
   }
 
-  .header_span_link{
-    position: relative;
-    left: 16vw;
-  }
-  
   .citat_desk{
     display: block;
   }
@@ -458,37 +465,12 @@ margin-top: 15px;
     padding: 0 40px; 
   }
 
-  .main_1h2{
-    font-size: 7vw;
-    top: 20px;
-    left: 20px;
-  }
-  
-  .main_2h2{
-    font-size: 9vw;
-    top: -60px;
-    left: 40px;
-  }
-
   .left_part{
     grid-column: 1 / span 2;
   }
 
   .right_part{
     grid-column: 4 / span 2;
-  }
-
-  .major_tom{
-    display: block;
-    width: 90px;
-    height: auto;
-    float: right;
-    transform: rotate(2deg);
-    margin: 15px;
-  }
-
-  .tom_arrow{
-    visibility: hidden;
   }
 
   blockquote::before{
@@ -505,6 +487,19 @@ margin-top: 15px;
     font-size: 2rem;
     margin-right: 0;
     margin-left: 60px;
+  }
+
+  .major_tom{
+    display: block;
+    width: 90px;
+    height: auto;
+    float: right;
+    transform: rotate(2deg);
+    margin: 15px;
+  }
+
+  .tom_arrow{
+    visibility: hidden;
   }
 
   .a_glow{
