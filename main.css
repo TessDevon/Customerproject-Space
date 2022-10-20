@@ -63,10 +63,16 @@ header{
 h1{
   font-family: 'Rubik', sans-serif;
   text-transform: uppercase;
-  font-size: 7vw;
   font-weight: 600;
   text-align: center;
   margin-top: 10%;
+  margin-bottom: 25px;
+  font-size: 55px;
+}
+
+
+h1{
+  
 }
 
 .header_span_link{
@@ -223,20 +229,10 @@ p{
   line-height: 150%;
 }
 
-h3, .left_part p{
- margin-left: 20px;
-}
-
-h3{
-  margin-top: 0;
-}
-
-.right_part p{
-  margin-right: 30px;
-}
-
-.left_part{
-  font-size: 1rem;
+.left_part p, .right_part p{
+  margin-left: 100px;
+  margin-right: 100px;
+  font-size: 13px;
 }
 
 blockquote{
@@ -248,22 +244,30 @@ blockquote{
   font-family: 'Rubik', sans-serif;
 } 
  
+.qoute{
+  font-size: 20px;
+  display: flex;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
 blockquote::before{
   content: open-quote;
   display: block;
   position: absolute;
-  top: 3px;
-  left: 3px;
+  top: 15px;
+  left: 10px;
   color: white;
-  font-size: 2rem;
+  font-size: 1rem;
 }
 
 blockquote::after{
 content: close-quote;
 position: absolute;
-bottom: -15px;
+bottom: -5px;
+left: 385px;
 color: white;
-font-size: 2rem;
+font-size: 1rem;
 }
  
 
@@ -291,30 +295,31 @@ h3{
   font-size: 2.5vw;
   font-weight: 600;
   font-family: 'Rubik', sans-serif;
+  margin-top: 0;
+  margin-left: 100px;
 }
 
 .div_h2{
   display: flex;
-
 }
 
 .main_1h2{
-  font-size: 9vw;
+  font-size: 10vw;
   font-weight: 600;
   text-shadow: 1px 2px 3px rgb(51, 51, 51);
   display: block;
   position: relative;
-  top: 15px;
-  left: 220px;
+  top: 35px;
+  left: 120px;
   z-index: 1;
 }
 
 .main_2h2{
   color: var(--secondarycolor);
-  font-size: 9vw;
+  font-size: 11vw;
   position: relative;
   top: -18px;
-  left: 230px;
+  left: 170px;
   font-family: 'Times New Roman', Times, serif;
 }
 
@@ -336,25 +341,26 @@ justify-content: space-between;
 }
 
 .glow{
-padding: 10px;
+padding: 5px;
 font-size: 15px;
 font-family: 'Rubik', sans-serif;
 width: 90vw;
-
 }
+
 .cookiebutton{
   display: flex;
   position: relative;
   top: 5px;
-
 }
 
 .a_glow{
   text-decoration: none; 
+  font-size: 1.5vw;
   color: var(--primarycolor);
   padding: 20px;
   padding-bottom: 0;
   margin-bottom: 0;
+  padding-top: 40px;
   text-shadow:
     0 0 7px #d200a2,
     0 0 10px #d200a2,
@@ -368,51 +374,23 @@ width: 90vw;
 
 .cookiebutton{
 text-decoration: none;
-background-color: blue;
-color: white;
-text-transform: uppercase;
-border: blue;
-margin-right: 20px;
 font-family: 'Rubik', sans-serif;
+background-color: blue;
+border: rgba(0, 0, 255, 0.216);
+margin-right: 20px;
+text-transform: uppercase;
+color: white;
+width: 75px;
+height: 20px;
+margin-top: 15px;
 }
+
 
 main{
   display: flex;
   flex-direction: column;
 }
 
-
-/*--------------------------------------------------------------------------------------------
--------------------------------------MOBILE---------------------------------------------------
-----------------------------------------------------------------------------------------------*/
-
-@media screen and (max-width:800px){
-  .on_click:checked ~ header_cube {
-	display: none;
-  }
-
-  .left_part p{
-    margin-left: 20px;
-    margin-right: 20px;
-    font-size: 1.8vw;
-  }
-  
-  .right_part p{
-    margin-left: 20px;
-    margin-right: 20px;
-    font-size: 1.8vw;
-  }
-
-  .a_glow{
-    font-size: 1.5vw;
-  }
-
-  h1{
-    margin-bottom: 25px;
-    font-size: 55px;
-  }
-
-}
 
 
 
@@ -428,6 +406,15 @@ main{
     /*border-radius: 20px;                          Får inte rundade kanter på den rosa linjen*/
   }
 
+  h1{
+    font-family: 'Rubik', sans-serif;
+    text-transform: uppercase;
+    font-size: 7vw;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 10%;
+  }
+
   .header_span_link{
     display: flex;
     position: relative;
@@ -438,25 +425,37 @@ main{
     display: none;
   }
 
+  h2{
+  height: 300px;
+
+  }
+
+  h3{
+    font-size: 2vw;
+    font-weight: 600;
+    font-family: 'Rubik', sans-serif;
+    margin-top: 0;
+    margin-bottom: 25px;
+    margin-left: 30px;
+  }
+
+  .left_part p, .right_part p{
+    font-size: 1rem;
+  }
+  .left_part p{
+    margin-right: 0;
+    margin-left: 30px;
+  }
+
+  .right_part p{
+    margin-left: 0;
+    margin-right: 30px;
+  }
+
   .header_span_link{
     position: relative;
     left: 16vw;
   }
-  /*
-  .header_link{
-  text-decoration: none;
-  color: black;
-  margin-left: 10px;
-  
-  
-  }
-    
-  .link_arrow{
-    position: relative;
-    transition: all 1s ease-in-out;
-    left: 0;
-  }
-*/
   
   .citat_desk{
     display: block;
@@ -484,23 +483,15 @@ main{
   }
 
   .main_1h2{
-    font-size: 8vw;
-    font-weight: 600;
-    text-shadow: 1px 2px 3px rgb(51, 51, 51);
-    display: block;
-    position: relative;
-    top: 15px;
-    left: 15px;
-    z-index: 1;
+    font-size: 9vw;
+    top: 0px;
+    left: 20px;
   }
   
   .main_2h2{
-    color: var(--secondarycolor);
-    font-size: 8vw;
-    position: relative;
-    top: -60px;
-    left: 27px;
-    font-family: 'Times New Roman', Times, serif;
+    top: -100px;
+    left: 40px;
+    
   }
 
   .left_part{
@@ -523,6 +514,25 @@ main{
   .tom_arrow{
     visibility: hidden;
   }
+
+  blockquote::before{
+    font-size: 2rem;
+  }
+  
+  blockquote::after{
+  bottom: -5px;
+  left: 460px;
+  font-size: 2rem;
+  }
+
+  .qoute{
+    font-size: 2rem;
+  }
+
+  .a_glow{
+    font-size: 1vw;
+  }
+
 }
 
 
