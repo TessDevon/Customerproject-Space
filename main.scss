@@ -1,6 +1,7 @@
 @import 'normalize';
 
 @charset "UTF-8";
+
 /*-------------------------------------------------------------------------------
 ---------------------------------------------MAIN CSS----------------------------
 ---------------------------------------------------------------------------------*/
@@ -31,7 +32,7 @@ span {
   visibility: visible;
 }
 
-.citat_desk {
+.qoute_desk {
   display: none;
 }
 
@@ -46,7 +47,7 @@ header {
   background-size: cover;
   background-position: center;
   height: 100vh;
-  background-image: url("../inl-2-kundprojekt-TessDevon/assets/photos/adam-miller-dBaz0xhCkPY-unsplash.jpg");
+  background-image: url("assets/photos/adam-miller-dBaz0xhCkPY-unsplash.jpg");
   display: flex;
 }
 
@@ -85,7 +86,7 @@ h1 {
 
 .link_arrow {
   position: relative;
-  transition: all 1s ease-in-out;
+  transition: all 1s ease-in;
   left: 0;
 }
 
@@ -219,7 +220,7 @@ main {
   background-size: cover;
   background-position: center;
   height: 100vh;
-  background-image: url(../inl-2-kundprojekt-TessDevon/assets/photos/raphael-nogueira-svbDI1Pq30s-unsplash2.jpg);
+  background-image: url(assets/photos/raphael-nogueira-svbDI1Pq30s-unsplash2.jpg);
 }
 
 h2, h3, p {
@@ -280,14 +281,6 @@ blockquote {
   font-family: "Rubik", sans-serif;
 }
 
-/*
-.art_qoute{
-  display: flex;
-  position: relative;
-}
------------ Tips av Jenny om att man kan få till att slutcitatteknet att följa.---------
-------------Testade att ta bort absulout på den undre men det gå inte det heller.-------
-------------Med den ovan lägger sig tecknet bredvid "perent-rutan."*/
 .qoute {
   font-size: 20px;
   display: flex;
@@ -318,6 +311,10 @@ blockquote::after {
   color: var(--primarycolor);
   -webkit-text-decoration-color: var(--primarycolor);
           text-decoration-color: var(--primarycolor);
+}
+
+.tom_arrow{
+  color: var(--primarycolor);
 }
 
 .cookiepart {
@@ -389,7 +386,6 @@ blockquote::after {
     text-decoration: underline;
     -webkit-text-decoration-color: var(--primarycolor);
             text-decoration-color: var(--primarycolor);
-    /*border-radius: 20px;                          Får inte rundade kanter på den rosa linjen*/
   }
   h2 {
     height: 300px;
@@ -431,10 +427,10 @@ blockquote::after {
     margin-right: 0;
     margin-left: 60px;
   }
-  .citat_desk {
+  .qoute_desk {
     display: block;
   }
-  .citat_desk_text {
+  .qoute_desk_text {
     background: #5C0047;
     background: linear-gradient(to top, #5C0047 0%, #6E6E6E 50%, #63004D 100%);
     -webkit-background-clip: text;
